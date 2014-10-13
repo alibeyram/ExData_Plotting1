@@ -11,7 +11,8 @@ sample <- subset(project1, (Date=="2007-02-01"|Date=="2007-02-02"))
 
 #opening the png file
 png('Plot1.png',width = 480, height = 480)
-par(bg="transparent")
+#par(bg="transparent")
+
 hist(as.numeric(sample$Global_active_power),xlab="Global Active Power (kilowatts)",main="Global Active Power",col="red")
 
 

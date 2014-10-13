@@ -14,7 +14,7 @@ dates <- strptime(paste(sample$Date,sample$Time),format="%Y-%m-%d %H:%M:%S")
 #opening the png file
 png('Plot4.png',width = 480, height = 480)
 
-par(bg="transparent")
+#par(bg="transparent")
 par(mfcol = c(2,2))
 
 plot(dates,sample$Global_active_power,xlab="",ylab="Global Active Power (kilowatts)",pch= "")

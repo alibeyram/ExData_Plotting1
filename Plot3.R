@@ -14,7 +14,7 @@ dates <- strptime(paste(sample$Date,sample$Time),format="%Y-%m-%d %H:%M:%S")
 #opening the png file
 png('Plot3.png',width = 480, height = 480)
 
-par(bg="transparent")
+#par(bg="transparent")
 
 plot(dates,sample$Sub_metering_1,type="n",xlab="",ylab="Energy sub metering")
 lines(dates,sample$Sub_metering_1)
